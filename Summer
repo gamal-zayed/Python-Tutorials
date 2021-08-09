@@ -9,3 +9,29 @@ for i in range(len(s)):
     
 print('123'.isdigit())
 print('Asmaa'.lower())
+
+print(2+3**(4*5))
+
+
+
+itsalpa = FALSE
+isnum = FALSE
+spcialchar = FALSE
+valid = FALSE
+s = 'btngana2@'
+
+while valid == FALSE:
+    for i in range(len(s)):
+        if s[i].itsalpa():
+            itsalpa = TRUE
+        elif s[i].isnumeric():
+            isnum = TRUE
+        elif s[i].isalnum()==FALSE:
+            spcialchar = TRUE
+    
+    
+    if itsalpa and isnum and spcialchar:
+        print('valid pass')
+    else:
+        print('invalid')
+        valid =FALSE
