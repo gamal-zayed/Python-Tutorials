@@ -1,0 +1,11 @@
+#n = input('insert names').split()
+#print('first name is', n[0])
+#print('last name is', n[-1])
+
+s = 'anhkdulff'
+for i in range(len(s)):
+    print(i,s[i])
+    
+    
+print('123'.isdigit())
+print('Asmaa'.lower())
