@@ -35,3 +35,14 @@ while valid == FALSE:
     else:
         print('invalid')
         valid =FALSE
+
+###############################################
+def GeneralAngle(B):
+    if float(B)<0:
+        return 'Negative'
+    elif 0<=float(B)<=360:
+        return float(B)
+    else:
+        return int(B) % 360
+    
+        
