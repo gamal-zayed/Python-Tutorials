@@ -45,4 +45,14 @@ def GeneralAngle(B):
     else:
         return int(B) % 360
     
-        
+ #########################################################
+ 
+def foo1(x)
+          a=foo2(x*2)
+	return a
+
+def foo2(x)
+          y= x+5
+	return y
+
+
