@@ -69,4 +69,10 @@ x= input("enter list:").split()
 p = myfunc1(x)
 print(p)
 #######################################################
-
+def tempconverter(T):
+    C = (T-32)*(5/9)
+    k = C + 273.15
+    #print("in Kelvins:", k, "In Celicius", C)
+    return k, C
+    
+print(tempconverter(30))
