@@ -76,3 +76,38 @@ def tempconverter(T):
     return k, C
     
 print(tempconverter(30))
+
+
+################################################################
+Check for Abdel Rahman
+from angle import GeneralAngleType
+
+def angleType( A ):
+    if A==0:
+        return 'zero'
+    elif 0<A<90:
+        return "acute angle"
+    elif A==90:
+        return 'right angle'
+    elif A==180:
+        return "straight angle"
+    elif A==360:
+        return "complete angle"
+    elif 180<A<360:
+        return "reflex angle"
+    elif 90<A<180:
+        return "obtuse angle"
+
+
+print(angleType(GeneralAngleType(int(input("enter the angle")))))
+
+def GeneralAngleType(x):
+
+    if x<0:
+        return "negative"
+    elif 360>=x>=0:
+        return (angleType(x))
+    elif x >360:
+        x=x%360
+        return (angleType(x))
+
