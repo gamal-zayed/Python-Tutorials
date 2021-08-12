@@ -44,7 +44,10 @@ def GeneralAngle(B):
         return float(B)
     else:
         return int(B) % 360
-    
+	
+angle = int(input('')
+x = GeneralAngle(angle)
+print(angletype(x))   
  #########################################################
  
 def foo1(x)
@@ -54,5 +57,16 @@ def foo1(x)
 def foo2(x)
           y= x+5
 	return y
-
+##################################################
+def myfunc1(x):
+    s=0
+    for i in range(len(x)):
+        s = s+ int(x[i])
+    #print(s)
+    return s
+    
+x= input("enter list:").split()
+p = myfunc1(x)
+print(p)
+#######################################################
 
